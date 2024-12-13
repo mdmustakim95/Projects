@@ -1,12 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is Hospital Project</title>
+    <title>Hospital website Project - a project by Md Mustakim</title>
+    <!-- stylesheet  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/plugins.css">
+    <link rel="stylesheet" href="./css/main.css">
+
 </head>
+
 <body>
-    <h3>This is Hospital project</h3>
-    
+    <!-- header section  -->
+    <header class="header-one  header--sticky">
+        <div class="header-top-area">
+            <div class="container-full-header">
+                <div class="col-lg-12">
+                    <div class="header-top">
+                        <div class="left">
+                            <div class="map-area">
+                                <i class="fa-sharp fa-regular fa-location-dot"></i>
+                                <a href="#">2702 Memory Lane, Chicago, IL 60605</a>
+                            </div>
+                            <div class="map-area">
+                                <i class="fa-light fa-clock"></i>
+                                <a href="#">Monday - Friday 08:00 - 20:00</a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="map-area">
+                                <i class="fa-regular fa-phone"></i>
+                                <a href="#">Emergency Line: 1-800-100-900</a>
+                            </div>
+                            <div class="social-area-tranaparent">
+                                <span>Follow Us-</span>
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-full-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-wrapper-1">
+                        <div class="logo-area-start">
+                            <a href="index.html" class="logo">
+                                <img src="images/logo.svg" alt="logo_area">
+                            </a>
+                            <div class="nav-area">
+                                <ul class="">
+                                    <li class="main-nav">
+                                        <a href="#">Home</a>
+                                    </li>
+
+                                    <li class="main-nav has-dropdown">
+                                        <a href="#">About</a>
+                                        <ul class="submenu parent-nav">
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Our Team</a></li>
+                                            <li><a href="#">Gallery</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="main-nav has-dropdown">
+                                        <a href="#">Services</a>
+                                        <ul class="submenu parent-nav">
+                                            <li><a href="#">Cardiology</a></li>
+                                            <li><a href="#">Dental Care</a></li>
+                                            <li><a href="#">Neurology</a></li>
+                                            <li><a href="#">Mental Health</a></li>
+                                            <li><a href="#">Orthopedics</a></li>
+                                            <li><a href="#">Medicine</a></li>
+                                            <li><a href="#">Comprehensive</a></li>
+                                            <li><a href="#">Gynecology</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="main-nav has-dropdown">
+                                        <a href="doctors-one.html">Our Doctors</a>
+                                        <ul class="submenu parent-nav">
+                                            <li><a href="#">Doctor 1</a></li>
+                                            <li><a href="#">Doctor 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-nav"><a href="#">Blog</a></li>
+                                    <li class="main-nav"><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <div class="input-area">
+                                <input id="myInput" type="text" placeholder="Search...">
+                                <i class="fa-light fa-magnifying-glass"></i>
+                            </div>
+                            <div class="cart-button">
+                                <i class="fa-light fa-cart-shopping"></i>
+                            </div>
+                            <a href="appoinment.html" class="rts-btn btn-primary">Appointment <img
+                                    src="images/arrow--up-right.svg" alt=""></a>
+                            <div class="menu-btn" id="menu-btn">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="14" width="20" height="2" fill="#1F1F25"></rect>
+                                    <rect y="7" width="20" height="2" fill="#1F1F25"></rect>
+                                    <rect width="20" height="2" fill="#1F1F25"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end  -->
+    <!-- banner section start  -->
+    <div class="banner-area-start">
+        <div class="container-full-header">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-area-one rts-section-gap bg_image">
+                        <div class="banner-content-area">
+                            <div class="pre-title wow fadeInUp" data-wow-delay=".0s" data-wow-duration=".8s">
+                                <img src="images/08.svg" alt="icons">
+                                <span>Your Health Our Priority</span>
+                            </div>
+                            <h1 class="title wow fadeInUp" data-wow-delay=".2s" data-wow-duration=".8s">Your Health <br>
+                                Our Priority</h1>
+                            <p class="disc wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".8s">
+                                We provide comprehensive healthcare services with a personal touch, ensuring you receive
+                                the best care possible.
+                            </p>
+                            <div class="select-area-down wow fadeInUp" data-wow-delay=".6s" data-wow-duration=".8s">
+                                <form action="#" method="get" accept-charset="utf-8">
+                                    <select name="my_select" class="mySelect">
+                                        <option value="2" selected="">Select Department</option>
+                                        <option value="10">Medicle</option>
+                                        <option value="1">Surgery</option>
+                                        <option value="13">Neurosugery</option>
+                                    </select>
+                                </form>
+                                <form class="select-2" action="#" method="get" accept-charset="utf-8">
+                                    <select name="my_select2" class="my_select2">
+                                        <option value="2" selected="">Select Doctor</option>
+                                        <option value="10">Mr.Mark</option>
+                                        <option value="1">Mrs. Sajjat</option>
+                                        <option value="13">John Dion</option>
+                                    </select>
+                                </form>
+                                <a href="#" class="rts-btn btn-primary">Find Doctors</a>
+                            </div>
+                        </div>
+                        <!-- person image -->
+                        <div class="person-image">
+                            <img src="images/01_2.png" alt="heart">
+                            <div class="single-tag wow zoomIn" data-wow-delay=".2s" data-wow-duration=".8s">
+                                <img src="images/heart.svg" alt="heart">
+                                <span>Cardiology</span>
+                            </div>
+                            <div class="single-tag two wow zoomIn" data-wow-delay=".4s" data-wow-duration=".8s">
+                                <img src="images/neuron.svg" alt="heart">
+                                <span>Neurology</span>
+                            </div>
+                            <div class="single-tag three wow zoomIn" data-wow-delay=".6s" data-wow-duration=".8s">
+                                <img src="images/orthopedics.svg" alt="heart">
+                                <span>Orthopedics</span>
+                            </div>
+                        </div>
+                        <!-- person image -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner section end  -->
+
+
+
+
+
+    <!-- script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js here -->
 </body>
+
 </html>
