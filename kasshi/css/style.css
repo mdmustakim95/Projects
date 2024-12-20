@@ -1,0 +1,88 @@
+@font-face {
+    font-family: minion;
+    src: url(../font/Minion\ Italic.otf);
+}
+:root {
+    --primary-color: #000;
+    --sec-color: #fff;
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: minion;
+    font-weight: 500;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+    object-fit: contain;
+}
+.hero .heading {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;;
+    position: relative;
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom:10px;
+    font-weight: bold;
+    text-align: center;
+    /* top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 1;
+
+}
+/* .hero .logo {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+} */
+
+.hero .logo-section {
+    position:relative;
+    display:flex;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 1;
+}
+.hero .logo-section img {
+    height:250px;
+}
+.hero .logo-section img.anim-icon {
+    animation: rotate 3s infinite;
+}
+@keyframes rotate {
+    
+}
+
+.about {
+    height: 100vh;
+    color:var(--primary-color);
+}
