@@ -1,0 +1,43 @@
+/* Add animations for the logo-section */
+@keyframes moveToTopLeft {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        height:100px;
+        width:auto;
+    }
+}
+
+/* Add animations for fading out the heading */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Styling and animation for logo-section */
+.hero .logo-section {
+    position: absolute;
+    display: flex;
+    top: 50%; /* Initial position */
+    left: 50%; /* Initial position */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: moveToTopLeft 3s linear forwards;
+    animation-delay: 2s; /* Start moving after 8 seconds */
+}
+
+/* Styling and animation for fading out the heading */
+.hero .heading {
+    animation: fadeOut 1s ease-in-out forwards;
+    animation-delay: 8s; /* Start fading after 8 seconds */
+}

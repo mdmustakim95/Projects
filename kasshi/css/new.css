@@ -1,0 +1,81 @@
+@font-face {
+    font-family: minion;
+    src: url(../font/Minion\ Italic.otf);
+}
+
+:root {
+    --primary-color: #ffdbdb;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+/* Main container styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    /* background: var(--primary-color); */
+    /* background-attachment: fixed;
+    padding-top: 20px; */
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+    object-fit: contain;
+}
+
+
+/* Child element (logo) styles */
+.logo {
+    height: 200px;
+    display:flex;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    animation: moveToTopLeft 3s forwards;
+    animation-delay: 2s; /* Wait for 2 seconds before starting */
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+.hero .logo img.logoIcon {
+    animation: rotation 10s linear infinite;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Keyframes to move and fix the logo at the top-left corner */
+@keyframes moveToTopLeft {
+    0% {
+        top: 50%;
+        left: 40%;
+        height: 200px;
+        width: auto;
+        
+    }
+    100% {
+        top: 10px;
+        left: 10px;
+        height:100px;
+        width:auto;
+    }
+}

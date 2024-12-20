@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main container styles */
+        .main {
+            height: 100vh;
+            background: red;
+            background-attachment: fixed;
+            padding-top: 20px;
+        }
+
+        /* Child element (logo) styles */
+        .child {
+            height: 100px;
+            display:flex;
+            width: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            animation: moveToTopLeft 3s forwards;
+            animation-delay: 2s; /* Wait for 2 seconds before starting */
+        }
+        .child img {
+            height: 100%;
+            width: 100%;
+        }
+        .main .child img.logoIcon {
+            animation: rotation 10s linear infinite;
+        }
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Secondary section styles */
+        .about {
+            height: 100vh;
+            background: #000;
+        }
+
+        /* Keyframes to move and fix the logo at the top-left corner */
+        @keyframes moveToTopLeft {
+            0% {
+                top: 50%;
+                left: 50%;
+                
+            }
+            100% {
+                top: 10px;
+                left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- Logo (child element) -->
+        <div class="child">
+            <img src="./images/logo.png" alt="" class="logoIcon">
+            <img src="./images/logo2.png" alt="">
+        </div>
+    </div>
+    <div class="about"></div>
+</body>
+</html>
