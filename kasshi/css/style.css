@@ -18,6 +18,11 @@
     position: relative;
     width: 100%;
     height: 100vh; 
+    overflow: hidden;
+    /* display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column; */
 }
 
 .hero video {
@@ -41,22 +46,55 @@
     margin-bottom:10px;
     font-weight: bold;
     text-align: center;
+    /* top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     z-index: 1;
 
 }
+/* .hero .logo {
+    position: relative;
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+} */
 
 .hero .logo-section {
-    position:absolute;
-    top:40%;
-    left:50%;
-    z-index: 1;
-    height:250px;
+    position:relative;
+    display:flex;
+    height: 250px;
     width: auto;
+    top: 25%;
+    left: 35%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 1;
+    animation: moveToTopLeft 3s forwards; 
+    animation-delay: 5s;
+}
+@keyframes moveToTopLeft {
+    0% {
+        top: 25%;
+        left: 35%;
+        height: 250px;
+        /* width: auto; */
+        
+    }
+    100% {
+        top: 10px;
+        left: 10px;
+        height:100px;
+        /* width:auto; */
+    }
 }
 
 .hero .logo-section img {
-    height: 100%;
-    width: 100%;
+    height:auto;
+    width: auto;
 }
 .hero .logo-section img.anim-icon {
     animation: rotation 10s linear infinite;
@@ -67,6 +105,11 @@
     }
     100% {
         transform: rotate(360deg);
-    }
+    }    
 }
+.about {
+    height: 100vh;
+    background:red;
+}
+
 

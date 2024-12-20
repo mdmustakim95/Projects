@@ -79,3 +79,8 @@
         width:auto;
     }
 }
+
+.about {
+    height: 100vh;
+    color: red;
+}
