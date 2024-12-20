@@ -51,7 +51,7 @@
     /* transform: translate(-50%, -50%); */
     z-index: 1;
     animation: fadeOut 1s ease-in-out forwards;
-    animation-delay: 7s; /* Start fading after 8 seconds */
+    animation-delay: 3s; /* Start fading after 8 seconds */
 }
 /* Add animations for fading out the heading */
 @keyframes fadeOut {
@@ -121,5 +121,24 @@
     height: 100vh;
     background:red;
 }
+/* .text-section {
+    position:relative;
+    top: 27%; 
+} */
+.text-section {
+    position:absolute;
+    top: 45vh;
+    width:100%;
+}
+.text-section.hide{
+    display:none;
+}
+.text-section p {
+    font-size: 45px;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+
 
 
