@@ -42,15 +42,25 @@
     text-transform: uppercase;;
     position: relative;
     color: var(--primary-color);
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom:10px;
     font-weight: bold;
     text-align: center;
-    /* top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
+    top: 25%;
+    /* left: 0%; */
+    /* transform: translate(-50%, -50%); */
     z-index: 1;
-
+    animation: fadeOut 1s ease-in-out forwards;
+    animation-delay: 7s; /* Start fading after 8 seconds */
+}
+/* Add animations for fading out the heading */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 /* .hero .logo {
     position: relative;
@@ -69,12 +79,12 @@
     display:flex;
     height: 250px;
     width: auto;
-    top: 25%;
-    left: 35%;
+    top: 27%;
+    left: 31%;
     /* transform: translate(-50%, -50%); */
     z-index: 1;
     animation: moveToTopLeft 3s forwards; 
-    animation-delay: 5s;
+    animation-delay: 3s;
 }
 @keyframes moveToTopLeft {
     0% {
@@ -86,7 +96,7 @@
     }
     100% {
         top: 10px;
-        left: 10px;
+        left: 50px;
         height:100px;
         /* width:auto; */
     }
