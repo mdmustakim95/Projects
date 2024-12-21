@@ -131,7 +131,7 @@
     width:100%;
 }
 .text-section.hide{
-    display:none;
+    /* display:none; */
 }
 .text-section p {
     font-size: 45px;
